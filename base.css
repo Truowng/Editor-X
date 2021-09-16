@@ -1,0 +1,125 @@
+:root {
+  --primary-color: #003dff;
+  --content-header-space: 100px;
+  --header-height: 73px;
+  --btn-height: 60px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+  font-family: headerfont;
+}
+
+@font-face {
+  font-family: headerfont;
+  src: url(../font/biko/Biko_Regular.otf);
+}
+@font-face {
+  font-family: desfont;
+  src: url(../font/Pragmatica-ExtraLight.ttf);
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: ;
+  box-sizing: border-box;
+}
+
+.btn {
+  max-width: 263px;
+  width: 100%;
+  min-width: 240px;
+  height: var(--btn-height);
+  background-color: #fff;
+  border-radius: 50px;
+  display: block;
+  transition: ease 0.3s;
+}
+
+.btn:hover {
+  background-color: #d9dada;
+  transition: ease 0.3s;
+}
+
+.header-page {
+  font-size: 9rem;
+  color: #fff;
+  line-height: 10rem;
+  font-family: headerfont;
+}
+
+.description__text {
+  font-size: 3.5rem;
+  color: #fff;
+  line-height: 4rem;
+  font-family: desfont;
+}
+
+.more__link {
+  font-size: 2.4rem;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  transition: right ease 0.3s;
+  right: 0;
+}
+
+.more__link:hover {
+  right: -10px;
+  transitionright ease 0.3s;
+  color: #d9dada;
+}
+
+.more__link::before {
+  content: "";
+  border: 1px solid #fff;
+  position: absolute;
+  bottom: -10px;
+}
+
+.more__icon--white,
+.more__link--white {
+  color: #fff;
+}
+
+.more__icon {
+  font-size: 1.7rem;
+}
+
+.more__icon--white {
+  color: #fff;
+}
+/* Animation */
+
+@keyframes dropDown {
+  from {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-135%);
+  }
+}
+
+@keyframes bubble {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
