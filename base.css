@@ -15,11 +15,11 @@
 
 @font-face {
   font-family: headerfont;
-  src: url(../font/biko/Biko_Regular.otf);
+  src: url(./font/biko/Biko_Regular.otf);
 }
 @font-face {
   font-family: desfont;
-  src: url(../font/Pragmatica-ExtraLight.ttf);
+  src: url(./font/Pragmatica-ExtraLight.ttf);
 }
 
 html {
