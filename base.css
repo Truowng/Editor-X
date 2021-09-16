@@ -25,7 +25,7 @@
 html {
   font-size: 62.5%;
   line-height: 1.6rem;
-  font-family: ;
+  font-family: headerfont;
   box-sizing: border-box;
 }
 
@@ -70,7 +70,7 @@ html {
 
 .more__link:hover {
   right: -10px;
-  transitionright ease 0.3s;
+  transition: right ease 0.3s;
   color: #d9dada;
 }
 
