@@ -869,6 +869,120 @@
   background-color: #fc8fbd;
   border: 2px solid #eef0f4;
 }
+
+.teamwork-invite {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-height: var(--member-img-container-height);
+  height: 100%;
+  align-items: flex-end;
+  position: relative;
+}
+
+.teamwork-invite__circle {
+  width: 54%;
+  height: 7.96vw;
+  border-radius: 100%;
+  border: 1px solid;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #7e7d8c;
+  transition: all ease 0.3s;
+}
+
+.teamwork-invite__circle::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  left: 8px;
+  bottom: 8px;
+  border-radius: 100%;
+  border: 1px solid #d6dada;
+  transition: all ease 0.3s;
+}
+
+.teamwork-invite__circle::after {
+  content: "";
+  position: absolute;
+  bottom: calc((7.96vw / 2) - 7px);
+  width: 100%;
+  height: 100%;
+  max-width: 12px;
+  max-height: 12px;
+  border-radius: 100%;
+  background-color: coral;
+  border: 1px solid #d6dada;
+  transform: rotate(0deg) translateY(4vw) rotate(0deg);
+  transition: all ease 1.3s;
+}
+
+.teamwork-invite__circle:hover {
+  border-color: #fc8fbd;
+}
+
+.teamwork-invite__circle:hover::before {
+  border-color: #f8d3e3;
+}
+.teamwork-invite__circle:hover .teamwork-invite__icon,
+.teamwork-invite__circle:hover .teamwork-invite__text {
+  color: #fc8fbd;
+}
+
+.teamwork-invite__circle:hover::after {
+  transform: rotate(360deg) translateY(4vw) rotate(-360deg);
+  transition: all ease 0.7s;
+  box-shadow: 0 0 10px #fc8fbd, 0 0 20px #fc8fbd, 0 0 30px #fc8fbd,
+    0 0 40px #fc8fbd, 0 0 50px #fc8fbd, 0 0 60px #fc8fbd, 0 0 70px #fc8fbd,
+    0 0 80px #fc8fbd, 0 0 90px #fc8fbd, 0 0 100px #fc8fbd;
+}
+
+.teamwork-invite__icon {
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+  color: #7e7d8c;
+  transition: all ease 0.3s;
+}
+
+#member--me-checkbox {
+  display: none;
+}
+
+.teamwork-invite__circle:checked ~ .member-info.member-info--me,
+.teamwork-invite__circle:checked ~ .member-img-container--me {
+  display: flex;
+  animation: fadeIn ease 0.8s;
+}
+
+.teamwork-invite__circle:checked ~ .teamwork-invite {
+  display: none;
+  animation: fadeOut ease 0.8s;
+}
+
+.teamwork-invite__text {
+  font-size: 1.5rem;
+  color: #7e7d8c;
+  transition: all ease 0.3s;
+}
+
+.member-info.member-info--me,
+.member-img-container--me {
+  display: none;
+}
+
+.teamwork-invite__circle:focus .member-info.member-info--me,
+.teamwork-invite__circle:focus .member-img-container--me {
+  display: flex;
+  animation: fadeIn ease 0.8s;
+}
+
 .teamwork__member-item:hover .member-img-container--me::after {
   transform: rotate(235deg) translateY(4vw) rotate(-360deg);
   transition: all ease 0.7s;
