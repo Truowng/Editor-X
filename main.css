@@ -121,7 +121,7 @@
 .content-design {
   position: relative;
   width: 100%;
-  height: 5000px;
+
   display: block;
   background-color: white;
 }
@@ -159,6 +159,7 @@
 .standard-description {
   max-width: 650px;
   position: relative;
+  font-size: 3.5rem;
 }
 
 .standard-description-btn {
@@ -220,6 +221,13 @@
   font-weight: bold;
 }
 
+.btn-link--white {
+  color: #000;
+}
+.btn-link--black {
+  color: #fff;
+}
+
 /* content advanced  */
 
 .advanced {
@@ -240,33 +248,38 @@
 }
 
 .advanced-header {
-  max-width: 574px;
-  width: 100%;
-  position: absolute;
   right: 75px;
   bottom: 300px;
 }
 
-.header-page__advanced {
+.header--potrait {
+  max-width: 574px;
+  width: 100%;
+  position: absolute;
+}
+
+.header-page__advanced,
+.header-page--potrait {
   font-size: 6.5rem;
   line-height: 6rem;
 }
 
-.advanced-description {
+.advanced-description,
+.header-description--potrait {
   max-width: 501px;
   padding-top: 67px;
   position: relative;
 }
 
-.advanced-description__text {
+.advanced-description__text,
+.description-text {
   font-size: 2.1rem;
   line-height: 3rem;
   display: block;
   padding-bottom: 67px;
 }
 
-.more__link-advance {
-  margin-top: 40px;
+.description-text {
 }
 
 .more__link-advance::before {
@@ -620,4 +633,64 @@
 
 .side-bar-bottom__info-icon {
   color: #8e93aa;
+}
+
+/* Team collab */
+
+.teamwork {
+  height: 1080px;
+}
+
+.teamwork__header-container {
+  position: relative;
+}
+
+.teamwork__header {
+  position: absolute;
+  top: 106px;
+  left: 74px;
+  width: 100%;
+}
+
+.teamwork__header-page {
+  font-size: 8rem;
+  line-height: 8rem;
+}
+
+.teamwork-description__text {
+  width: 90%;
+  font-family: desfont;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 4rem;
+}
+
+.more__link-teamwork::before {
+  content: "";
+  width: 36%;
+}
+
+.teamwork__member {
+  /* background-color: skyblue; */
+  max-height: 100%;
+}
+
+.teamwork__design {
+  /* background-color: slateblue; */
+}
+
+.teamwork__member-item {
+  /* background-color: springgreen; */
+  padding: 0;
+  height: 100%;
+  border-right: 1px solid #979aaa;
+  border-bottom: 1px solid #979aaa;
+}
+
+.teamwork__member-item:first-child {
+  border-left: 1px solid #979aaa;
+}
+
+.teamwork__member-row {
+  height: calc(1080px / 3);
 }

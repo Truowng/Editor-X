@@ -22,6 +22,11 @@
   src: url(./font/Pragmatica-ExtraLight.ttf);
 }
 
+@font-face {
+  font-family: desfont--black;
+  src: url(./font/Helvetica/helveticaneue.ttf);
+}
+
 html {
   font-size: 62.5%;
   line-height: 1.6rem;
@@ -34,13 +39,25 @@ html {
   width: 100%;
   min-width: 240px;
   height: var(--btn-height);
-  background-color: #fff;
+
   border-radius: 50px;
   display: block;
   transition: ease 0.3s;
 }
 
-.btn:hover {
+.btn--white {
+  background-color: #fff;
+}
+.btn--black {
+  background-color: #000;
+}
+
+.btn--black:hover {
+  background-color: var(--primary-color);
+  transition: ease 0.4s;
+}
+
+.btn--white:hover {
   background-color: #d9dada;
   transition: ease 0.3s;
 }
@@ -52,11 +69,25 @@ html {
   font-family: headerfont;
 }
 
+.header-page--black {
+  color: #000;
+}
+
 .description__text {
-  font-size: 3.5rem;
   color: #fff;
   line-height: 4rem;
   font-family: desfont;
+}
+
+.description__text--black {
+  color: #000;
+}
+
+.description__text--potrait {
+  font-size: 2.1rem;
+  line-height: 3rem;
+  display: block;
+  padding-bottom: 67px;
 }
 
 .more__link {
@@ -66,17 +97,31 @@ html {
   display: block;
   transition: right ease 0.3s;
   right: 0;
+  margin-top: 40px;
 }
 
-.more__link:hover {
+.more__link--white:hover {
   right: -10px;
   transition: right ease 0.3s;
   color: #d9dada;
 }
 
-.more__link::before {
+.more__link--black:hover {
+  right: -10px;
+  transition: right ease 0.3s;
+  color: rgb(10, 10, 10);
+}
+
+.more__link-before--white::before {
   content: "";
   border: 1px solid #fff;
+  position: absolute;
+  bottom: -10px;
+}
+
+.more__link--before-black::before {
+  content: "";
+  border: 1px solid #000;
   position: absolute;
   bottom: -10px;
 }
@@ -84,6 +129,11 @@ html {
 .more__icon--white,
 .more__link--white {
   color: #fff;
+}
+
+.more__link--black,
+.more__icon--white {
+  color: #000;
 }
 
 .more__icon {
