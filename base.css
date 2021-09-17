@@ -173,3 +173,12 @@ html {
     transform: translateY(20px);
   }
 }
+
+@keyframes myOrbit {
+  from {
+    transform: rotate(0deg) translateX(4vw) rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg) translateX(4vw) rotate(-360deg);
+  }
+}
