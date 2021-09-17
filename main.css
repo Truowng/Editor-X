@@ -895,6 +895,7 @@
   flex-direction: column;
   color: #7e7d8c;
   transition: all ease 0.3s;
+  cursor: pointer;
 }
 
 .teamwork-invite__circle::before {
