@@ -767,7 +767,7 @@
   border: 2px solid #eef0f4;
 }
 .teamwork__member-item:hover .member-img-container--two::after {
-  transform: rotate(140deg) translateY(4vw) rotate(-360deg);
+  transform: rotate(200deg) translateY(4vw) rotate(-360deg);
   transition: all ease 0.7s;
   box-shadow: 0 0 10px #b9acf0, 0 0 20px #b2a2f7, 0 0 30px #b2a2f7,
     0 0 40px #b2a2f7, 0 0 50px #b2a2f7, 0 0 60px #b2a2f7, 0 0 70px #b2a2f7,
@@ -782,7 +782,7 @@
 }
 
 .teamwork__member-item:hover .member-img-container--three::after {
-  transform: rotate(140deg) translateY(4vw) rotate(-360deg);
+  transform: rotate(275deg) translateY(4vw) rotate(-360deg);
   transition: all ease 0.7s;
   box-shadow: 0 0 10px #ffab00, 0 0 20px #ffab00, 0 0 30px #ffab00,
     0 0 40px #ffab00, 0 0 50px #ffab00, 0 0 60px #ffab00, 0 0 70px #ffab00,
@@ -797,7 +797,7 @@
 }
 
 .teamwork__member-item:hover .member-img-container--four::after {
-  transform: rotate(140deg) translateY(4vw) rotate(-360deg);
+  transform: rotate(111deg) translateY(4vw) rotate(-360deg);
   transition: all ease 0.7s;
   box-shadow: 0 0 10px #ff4343, 0 0 20px #ff4343, 0 0 30px #ff4343,
     0 0 40px #ff4343, 0 0 50px #ff4343, 0 0 60px #ff4343, 0 0 70px #ff4343,
@@ -812,7 +812,7 @@
 }
 
 .teamwork__member-item:hover .member-img-container--five::after {
-  transform: rotate(140deg) translateY(4vw) rotate(-360deg);
+  transform: rotate(135deg) translateY(4vw) rotate(-360deg);
   transition: all ease 0.7s;
   box-shadow: 0 0 10px #00d700, 0 0 20px #00d700, 0 0 30px #00d700,
     0 0 40px #00d700, 0 0 50px #00d700, 0 0 60px #00d700, 0 0 70px #00d700,
@@ -827,7 +827,7 @@
 }
 
 .teamwork__member-item:hover .member-img-container--six::after {
-  transform: rotate(140deg) translateY(4vw) rotate(-360deg);
+  transform: rotate(253deg) translateY(4vw) rotate(-360deg);
   transition: all ease 0.7s;
   box-shadow: 0 0 10px #2dd1b0, 0 0 20px #2dd1b0, 0 0 30px #2dd1b0,
     0 0 40px #2dd1b0, 0 0 50px #2dd1b0, 0 0 60px #2dd1b0, 0 0 70px #2dd1b0,
@@ -842,7 +842,7 @@
 }
 
 .teamwork__member-item:hover .member-img-container--seven::after {
-  transform: rotate(140deg) translateY(4vw) rotate(-360deg);
+  transform: rotate(190deg) translateY(4vw) rotate(-360deg);
   transition: all ease 0.7s;
   box-shadow: 0 0 10px #00a3ff, 0 0 20px #00a3ff, 0 0 30px #00a3ff,
     0 0 40px #00a3ff, 0 0 50px #00a3ff, 0 0 60px #00a3ff, 0 0 70px #00a3ff,
@@ -856,25 +856,25 @@
   border: 2px solid #eef0f4;
 }
 .teamwork__member-item:hover .member-img-container--eight::after {
-  transform: rotate(140deg) translateY(4vw) rotate(-360deg);
+  transform: rotate(120deg) translateY(4vw) rotate(-360deg);
   transition: all ease 0.7s;
   box-shadow: 0 0 10px #fe7e3f, 0 0 20px #fe7e3f, 0 0 30px #fe7e3f,
     0 0 40px #fe7e3f, 0 0 50px #fe7e3f, 0 0 60px #fe7e3f, 0 0 70px #fe7e3f,
     0 0 80px #fe7e3f, 0 0 90px #fe7e3f, 0 0 100px #fe7e3f;
 }
 .member-img-container--me::before {
-  border-color: #ff5dd8;
+  border-color: #fc8fbd;
 }
 .member-img-container--me::after {
-  background-color: #ff5dd8;
+  background-color: #fc8fbd;
   border: 2px solid #eef0f4;
 }
 .teamwork__member-item:hover .member-img-container--me::after {
-  transform: rotate(140deg) translateY(4vw) rotate(-360deg);
+  transform: rotate(235deg) translateY(4vw) rotate(-360deg);
   transition: all ease 0.7s;
-  box-shadow: 0 0 10px #ff5dd8, 0 0 20px #ff5dd8, 0 0 30px #ff5dd8,
-    0 0 40px #ff5dd8, 0 0 50px #ff5dd8, 0 0 60px #ff5dd8, 0 0 70px #ff5dd8,
-    0 0 80px #ff5dd8, 0 0 90px #ff5dd8, 0 0 100px #ff5dd8;
+  box-shadow: 0 0 10px #fc8fbd, 0 0 20px #fc8fbd, 0 0 30px #fc8fbd,
+    0 0 40px #fc8fbd, 0 0 50px #fc8fbd, 0 0 60px #fc8fbd, 0 0 70px #fc8fbd,
+    0 0 80px #fc8fbd, 0 0 90px #fc8fbd, 0 0 100px #fc8fbd;
 }
 
 .member-img {
