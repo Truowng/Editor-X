@@ -70,6 +70,14 @@ html {
   font-family: headerfont;
 }
 
+.header--landscape {
+  padding: 100px 50px 50px 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-family: helvetica;
+}
+
 .header-page--black {
   color: #000;
 }
