@@ -686,6 +686,10 @@
   overflow: hidden;
 }
 
+.teamwork__member-item--show {
+  overflow: unset;
+}
+
 .teamwork__member-item:first-child {
   border-left: 1px solid #979aaa;
 }
@@ -1239,4 +1243,230 @@
   bottom: 197px;
   transform: translateY(231px);
   transition: all 0.5s ease;
+}
+
+/* custom code page */
+
+.custom-code {
+  background-image: url(./img/standard-background/standard-background.webp);
+  height: 1092px;
+  position: relative;
+}
+
+.custom-code__container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 190px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: #f1f3f4;
+}
+
+.sticky__header-bar--custom-code {
+  margin: 0;
+  height: 48px;
+}
+
+.header-bar-icon-container-left--custom-code,
+.header-bar-icon-container-right--custom-code {
+  font-size: 2.5rem;
+}
+
+.custom-code__header-container {
+  width: 1542px;
+  height: 490px;
+  position: relative;
+  /* background-color: violet; */
+  overflow: hidden;
+}
+
+#my-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.custom-code-header {
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.custom-code-description {
+  position: relative;
+  font-size: 2.4rem;
+  max-width: 830px;
+  width: 100%;
+  text-align: center;
+}
+
+.custom-code-btn {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.custom-code-btn:hover {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.custom-code-btn:hover .btn-link--custom-code {
+  color: #fff;
+}
+
+.custom-code__img {
+  padding: 0;
+}
+
+/* marketing  */
+
+.marketing {
+  height: 1080px;
+  background: url(./img/standard-background/standard-background.webp),
+    linear-gradient(
+      170deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(2, 3, 10, 1) 41%,
+      rgba(66, 85, 123, 1) 100%,
+      rgba(133, 7, 133, 1) 100%
+    );
+  position: relative;
+  overflow: hidden;
+}
+
+.marketing-header {
+  margin: 0 122px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header__marketing {
+  width: 100%;
+}
+
+.marketing-description {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+}
+
+.marketing-description__text {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.more--marketing {
+  position: absolute;
+  margin-top: 17px;
+  left: 39%;
+}
+
+.more__link-marketing::before {
+  content: "";
+  width: 87%;
+}
+
+.marketing__container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.marketing__image {
+  padding-top: 50px;
+  /* background-color: gray; */
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.more--marketing-img {
+  position: absolute;
+  top: 15px;
+  left: -200px;
+  transition: all ease 0.8s;
+}
+
+.marketing__image:hover .more--marketing-img {
+  left: 25px;
+  transition-delay: 0.2s;
+}
+
+.marketing__image:nth-child(2):hover .more--marketing-img {
+  left: 0;
+}
+.marketing__image:nth-child(3):hover .more--marketing-img {
+  left: 50px;
+}
+
+.more__icon-marketing {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.more__link-marketing-img {
+  margin: 0;
+  color: rgb(207, 38, 212);
+  font-size: 1.9rem;
+}
+
+/* discover */
+
+.discover {
+  background-image: url(./img/discover/potrait-background.webp);
+  height: 3265px;
+  position: relative;
+}
+
+.discover-sticky-container {
+  background-image: url(./img/discover/sticky-background.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(659px + 159px);
+  width: 1903px;
+  position: sticky;
+  top: var(--header-height);
+}
+
+.discover-header {
+  margin-left: 90px;
+  flex-direction: column;
+  position: relative;
+}
+
+.header__discover {
+  max-width: 1252px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.discover-description {
+  position: absolute;
+  top: 100%;
+  left: 17%;
+}
+
+.more__link-discover::before {
+  width: 87%;
+}
+
+.btn-link--discover:hover {
+  top: 0;
+  color: #fff;
+}
+
+.discover-btn:hover {
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.discover-btn {
+  left: -125%;
+  top: 32%;
 }
