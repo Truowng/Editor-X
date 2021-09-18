@@ -676,10 +676,6 @@
   max-height: 100%;
 }
 
-.teamwork__design {
-  /* background-color: slateblue; */
-}
-
 .teamwork__member-item {
   /* background-color: springgreen; */
   padding: 0;
@@ -1135,4 +1131,19 @@
   display: inline-block;
   text-decoration: none;
   color: #786279;
+}
+
+.teamwork__design {
+  /* background-color: slateblue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.teamwork__design-img {
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 75%;
+  border: 1px solid rgb(207, 209, 220);
 }
