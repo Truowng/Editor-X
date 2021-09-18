@@ -687,6 +687,7 @@
   border-right: 1px solid #979aaa;
   border-bottom: 1px solid #979aaa;
   position: relative;
+  overflow: hidden;
 }
 
 .teamwork__member-item:first-child {
@@ -706,6 +707,118 @@
   right: -2.98vw;
   top: 42%;
   transform: translateY(-50%);
+}
+.teamwork__member-status--boss,
+.teamwork__member-status {
+  position: absolute;
+  padding: 0 25px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  transform: translateX(-101%);
+  transition: transform ease 0.3s;
+  z-index: 1;
+}
+
+.teamwork__member-status--boss {
+  top: unset;
+}
+
+.teamwork__member-item:hover .teamwork__member-status {
+  transform: translateX(0);
+  transition: transform ease 0.5s;
+  transition-delay: 1s;
+}
+
+.member-status__header {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #0034d9; */
+  border-bottom: 1px solid #ccc;
+  margin: 5px 0;
+}
+.member-status__header-text {
+  font-size: 1.7rem;
+}
+.member-status__header-icon {
+  font-size: 1.5rem;
+}
+
+.member-status__content-type {
+  /* background-color: #00d700; */
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.member-status__content-type__text {
+  font-size: 1.5rem;
+  color: rgb(121, 121, 121);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.member-status__member-info-form {
+  display: flex;
+  /* background-color: #2dd1b0; */
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.member-status__member-info__img {
+  width: 50px;
+  height: auto;
+  border-radius: 50px;
+}
+
+.member-status__member-info {
+  margin-left: 22px;
+}
+.member-status__member-info-name {
+  font-size: 1.6rem;
+
+  margin-bottom: 5px;
+}
+
+.member-status__member-info-time {
+  font-size: 1.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(121, 121, 121);
+}
+
+.member-status__member-info-boss {
+  font-size: 1.4rem;
+  font-family: headerfont;
+  color: rgb(121, 121, 121);
+}
+.member-status__member-info-boss-icon,
+.member-status__member-info-time-icon {
+  font-size: 1.1rem;
+  margin-right: 3px;
+}
+
+.member-status__member-info-boss-icon {
+  font-size: 1.2rem;
+}
+
+.member-status__member-cmt-text {
+  font-size: 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 2.1rem;
+}
+.member-status__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+
+.member-status__footer-text,
+.member-status__footer-icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
 }
 
 .teamwork__member-row {
@@ -922,7 +1035,7 @@
   background-color: coral;
   border: 1px solid #d6dada;
   transform: rotate(0deg) translateY(4vw) rotate(0deg);
-  transition: all ease 1.3s;
+  transition: all ease 1s;
 }
 
 .teamwork-invite__circle:hover {
@@ -939,7 +1052,7 @@
 
 .teamwork-invite__circle:hover::after {
   transform: rotate(360deg) translateY(4vw) rotate(-360deg);
-  transition: all ease 0.7s;
+  transition: all linear 0.3s infinite;
   box-shadow: 0 0 10px #fc8fbd, 0 0 20px #fc8fbd, 0 0 30px #fc8fbd,
     0 0 40px #fc8fbd, 0 0 50px #fc8fbd, 0 0 60px #fc8fbd, 0 0 70px #fc8fbd,
     0 0 80px #fc8fbd, 0 0 90px #fc8fbd, 0 0 100px #fc8fbd;
