@@ -385,13 +385,13 @@
   flex: 1;
   /* background-color: #24282d; */
   border: 1px solid #fff;
-  opacity: 0.7;
+  /* opacity: 0.7; */
   overflow: hidden;
 }
 
 #mirror-video {
   width: 100%;
-
+  filter: blur(10px);
   transform: scale(1.23);
 }
 
@@ -823,7 +823,12 @@
 .member-status__footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 90px;
+
+  align-items: flex-end;
+  position: absolute;
+  bottom: 24px;
+  left: 25px;
+  right: 25px;
 }
 
 .member-status__footer-text,
