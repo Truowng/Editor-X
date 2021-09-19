@@ -1720,7 +1720,7 @@
 .function {
   height: 678px;
   width: 100%;
-  background: url(./img/standard-background/standard-background.webp);
+  background: url(./img/standard-background/standard-background.webp), #f4f6fa;
 }
 
 .function-content {
