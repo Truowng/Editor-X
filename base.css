@@ -54,7 +54,7 @@ html {
 }
 
 .btn--black:hover {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   transition: ease 0.4s;
 }
 
@@ -128,7 +128,7 @@ html {
   bottom: -10px;
 }
 
-.more__link--before-black::before {
+.more__link-before--black::before {
   content: "";
   border: 1px solid #000;
   position: absolute;

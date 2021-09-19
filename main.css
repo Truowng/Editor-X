@@ -1286,12 +1286,14 @@
   bottom: 0;
 }
 
+.academy-header,
 .custom-code-header {
   flex-direction: column;
   align-items: center;
   position: relative;
 }
 
+.academy-description,
 .custom-code-description {
   position: relative;
   font-size: 2.4rem;
@@ -1300,6 +1302,7 @@
   text-align: center;
 }
 
+.academy-btn,
 .custom-code-btn {
   left: 50%;
   transform: translateX(-50%);
@@ -1469,4 +1472,53 @@
 .discover-btn {
   left: -125%;
   top: 32%;
+}
+
+/* academy  */
+
+.academy {
+  background: url(./img/standard-background/standard-background.webp);
+  background-size: cover;
+  height: 1096px;
+}
+
+.academy-description {
+  padding-top: 50px;
+}
+
+.more__link-academy::before {
+  width: 80%;
+}
+
+.academy-btn {
+  top: 80%;
+  left: 31%;
+  overflow: hidden;
+}
+
+.btn-link-academy {
+  position: absolute;
+  left: 0%;
+}
+
+.academy-btn:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.academy-btn:hover #video-hover {
+  transition: all ease 0.5s;
+  filter: blur(5px);
+}
+.more--academy {
+  position: relative;
+  left: 50%;
+  max-width: 300px;
+}
+
+#video-hover {
+  opacity: 1;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  transition: all ease 0.5s;
 }
