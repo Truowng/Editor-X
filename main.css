@@ -391,7 +391,7 @@
 
 #mirror-video {
   width: 100%;
-  filter: blur(10px);
+  filter: blur(7px);
   transform: scale(1.23);
 }
 
@@ -675,6 +675,30 @@
   font-weight: 400;
   font-size: 2.5rem;
   line-height: 4rem;
+}
+
+.teamwork-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.teamwork-btn:hover #video-hover-teamwork {
+  opacity: 1;
+}
+
+.teamwork-btn-link {
+  position: absolute;
+  left: 0;
+  text-shadow: 0 0 5px #000;
+}
+
+#video-hover-teamwork {
+  position: relative;
+  opacity: 0;
+  z-index: 0;
+  width: 100%;
+  transition: all ease 0.7s;
+  filter: blur(1px);
 }
 
 .more__link-teamwork::before {
@@ -1534,7 +1558,7 @@
 
 #video-hover {
   position: relative;
-  z-index: -1;
+  z-index: 0;
   width: 100%;
   transition: all ease 0.5s;
 }
