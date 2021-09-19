@@ -1,6 +1,5 @@
 .header {
   height: var(--header-height);
-  background-color: #fff;
   position: fixed;
   top: 0;
   right: 0;
@@ -10,6 +9,9 @@
   padding-left: 48px;
   box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.2);
   z-index: 100;
+  backdrop-filter: blur(40px);
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(40px);
 }
 
 .header__logo {
@@ -85,6 +87,7 @@
   animation: dropDown ease 0.3s;
   transform-origin: top;
   box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.2);
+
   z-index: 1;
 }
 
@@ -281,9 +284,6 @@
   line-height: 3rem;
   display: block;
   padding-bottom: 67px;
-}
-
-.description-text {
 }
 
 .more__link-advance::before {
@@ -1332,7 +1332,7 @@
   align-items: center;
   position: relative;
 }
-
+.editor-description,
 .academy-description,
 .custom-code-description {
   position: relative;
@@ -1550,6 +1550,7 @@
   transition: all ease 0.5s;
   filter: blur(5px);
 }
+
 .more--academy {
   position: relative;
   left: 50%;
@@ -1579,8 +1580,6 @@
   border-left: 1px solid #000;
   border-top: 1px solid #000;
 }
-.academy-content:first-child {
-}
 
 .academy-content__image {
   width: 100%;
@@ -1605,5 +1604,88 @@
   margin-top: -5px;
 }
 
-.academy-content__image-container {
+/* editor  */
+
+.editor {
+  height: 997px;
+  background-color: #141414;
+}
+
+.editor__header {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.editor-header-text {
+  font-size: 7.2rem;
+}
+
+.editor-description__text {
+  max-width: 372px;
+  width: 100%;
+  text-align: left;
+  margin-top: 26px;
+}
+
+.editor-content__container {
+  height: calc(100% - 276px);
+}
+
+.editor-content {
+  height: 100%;
+  width: 100%;
+  border-top: 1px solid #fff;
+  position: relative;
+}
+
+.editor-content__item {
+  position: absolute;
+  right: 60px;
+  top: 60px;
+  bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.editor-content:last-child .editor-content__item {
+  right: unset;
+  left: 60px;
+}
+
+.editor-content__item-header {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.editor-content__item-header-text {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  margin-bottom: 30px;
+}
+.editor-content__item-header-description {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-family: desfont;
+  max-width: 421px;
+  width: 100%;
+}
+
+.editor-content:nth-child(2) {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+.more__link-editor--one::before {
+  width: 15%;
+  margin-left: 11px;
+}
+
+.more__link-editor--two::before {
+  width: 22%;
+}
+
+.more__link-editor--three::before {
+  width: 41%;
+  margin-left: 11px;
 }
