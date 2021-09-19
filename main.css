@@ -1332,6 +1332,8 @@
   align-items: center;
   position: relative;
 }
+
+.function-description,
 .editor-description,
 .academy-description,
 .custom-code-description {
@@ -1619,7 +1621,7 @@
 .editor-header-text {
   font-size: 7.2rem;
 }
-
+.function-description__text,
 .editor-description__text {
   max-width: 372px;
   width: 100%;
@@ -1689,4 +1691,47 @@
 .more__link-editor--three::before {
   width: 41%;
   margin-left: 11px;
+}
+
+/* function  */
+
+.function {
+  height: 678px;
+  width: 100%;
+  background: url(./img/standard-background/standard-background.webp);
+}
+
+.function-content {
+  display: flex;
+  align-items: center;
+}
+
+.function__header-container {
+  padding: 0;
+  min-width: 100%;
+  height: calc(678px / 3);
+}
+
+.function-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 80px;
+  height: 100%;
+  border-bottom: 1px solid #000;
+}
+
+.function-header-text {
+  font-size: 5rem;
+  display: inline-block;
+  margin-right: 100px;
+  min-width: 544px;
+}
+
+.function-description {
+  display: inline-block;
+}
+
+.function-description__text {
+  max-width: 740px;
 }
