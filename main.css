@@ -286,9 +286,13 @@
   padding-bottom: 67px;
 }
 
+.more__link-advance {
+  max-width: 265px;
+}
+
 .more__link-advance::before {
   content: "";
-  width: 46%;
+  width: 86%;
 }
 
 .advanced-img__container {
@@ -701,9 +705,14 @@
   filter: blur(1px);
 }
 
+.more__link-teamwork {
+  max-width: 204px;
+  position: relative;
+}
+
 .more__link-teamwork::before {
   content: "";
-  width: 36%;
+  width: 86%;
 }
 
 .teamwork__member {
@@ -1707,17 +1716,29 @@
   border-right: 1px solid #fff;
 }
 
+.more__link-editor--one {
+  max-width: 115px;
+}
+
 .more__link-editor--one::before {
-  width: 15%;
+  width: 66%;
   margin-left: 11px;
 }
 
+.more__link-editor--two {
+  max-width: 140px;
+}
+
 .more__link-editor--two::before {
-  width: 22%;
+  width: 79%;
+}
+
+.more__link-editor--three {
+  max-width: 245px;
 }
 
 .more__link-editor--three::before {
-  width: 41%;
+  width: 84%;
   margin-left: 11px;
 }
 
