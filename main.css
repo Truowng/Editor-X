@@ -1816,9 +1816,10 @@
 .website-slider {
   height: 28vw;
   position: relative;
-  perspective: 1000px;
+  perspective: 700px;
   transform-style: preserve-3d;
   display: flex;
+  margin-top: 38px;
 }
 
 .website-slider .picture {
@@ -1831,7 +1832,7 @@
   margin-top: 50px;
   left: 0;
   right: 0;
-  transition: transform ease 0.4s;
+  transition: transform ease 0.6s;
 }
 
 .more__link-slider {
@@ -1874,7 +1875,7 @@
 #pic4:checked ~ .picture-two,
 #pic5:checked ~ .picture-three {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
-  transform: translate3d(-80%, 0, -300px) rotateY(40deg);
+  transform: translate3d(-90%, 0, -300px) rotateY(40deg);
 }
 #pic1:checked ~ .picture-five,
 #pic2:checked ~ .picture-one,
@@ -1893,14 +1894,14 @@
   transform: translate3d(0, 0, 150px);
 }
 
-#pic1:checked ~ .picture-one .view-template-btn,
+/* #pic1:checked ~ .picture-one .view-template-btn,
 #pic2:checked ~ .picture-two .view-template-btn,
 #pic3:checked ~ .picture-three .view-template-btn,
 #pic4:checked ~ .picture-four .view-template-btn,
 #pic5:checked ~ .picture-five .view-template-btn {
-  display: block;
+  display: none;
   animation: fadeIn ease 1.5s;
-}
+} */
 
 #pic1:checked ~ .picture-two,
 #pic2:checked ~ .picture-three,
@@ -1916,7 +1917,7 @@
 #pic4:checked ~ .picture-one,
 #pic5:checked ~ .picture-two {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
-  transform: translate3d(80%, 0, -300px) rotateY(-40deg);
+  transform: translate3d(90%, 0, -300px) rotateY(-40deg);
 }
 
 [type="radio"] {
