@@ -884,30 +884,22 @@
   position: relative;
 }
 
-.member-img-container::before {
-  content: "";
-  width: 54%;
-  height: 7.96vw;
-  border-radius: 100%;
-  border: 1px solid;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -3px;
-}
-
 .member-img-container::after {
   content: "";
   width: 12px;
   height: 12px;
   border-radius: 100%;
   position: absolute;
-  bottom: calc((7.96vw / 2) - 11px);
+  bottom: calc((7.96vw / 2) - 5px);
   transform: rotate(0deg) translateY(4vw) rotate(0deg);
   transition: all ease 1.3s;
 }
-.member-img-container--one::before {
-  border-color: #482a20;
+.member-img-item--one::before {
+  border-color: #482a20 !important;
+  top: -4px !important;
+  right: -5px !important;
+  left: -4px !important;
+  bottom: 1px !important;
 }
 .member-img-container--one::after {
   background-color: #bda182;
@@ -921,8 +913,8 @@
     0 0 40px #d0b596, 0 0 50px #d0b596, 0 0 60px #d0b596, 0 0 70px #d0b596,
     0 0 80px #d0b596, 0 0 90px #d0b596, 0 0 100px #d0b596;
 }
-.member-img-container--two::before {
-  border-color: #d8d1f6;
+.member-img-item--two::before {
+  border-color: #d8d1f6 !important;
 }
 .member-img-container--two::after {
   background-color: #b2a2f7;
@@ -935,8 +927,9 @@
     0 0 40px #b2a2f7, 0 0 50px #b2a2f7, 0 0 60px #b2a2f7, 0 0 70px #b2a2f7,
     0 0 80px #b2a2f7, 0 0 90px #b2a2f7, 0 0 100px #b2a2f7;
 }
-.member-img-container--three::before {
-  border-color: #ffab00;
+.member-img-item--three::before {
+  border-color: #ffab00 !important;
+  bottom: 1px !important;
 }
 .member-img-container--three::after {
   background-color: #ffab00;
@@ -950,8 +943,9 @@
     0 0 40px #ffab00, 0 0 50px #ffab00, 0 0 60px #ffab00, 0 0 70px #ffab00,
     0 0 80px #ffab00, 0 0 90px #ffab00, 0 0 100px #ffab00;
 }
-.member-img-container--four::before {
-  border-color: #ff4343;
+.member-img-item--four::before {
+  border-color: #ff4343 !important;
+  right: -4px !important;
 }
 .member-img-container--four::after {
   background-color: #ff4343;
@@ -965,8 +959,12 @@
     0 0 40px #ff4343, 0 0 50px #ff4343, 0 0 60px #ff4343, 0 0 70px #ff4343,
     0 0 80px #ff4343, 0 0 90px #ff4343, 0 0 100px #ff4343;
 }
-.member-img-container--five::before {
-  border-color: #00d700;
+.member-img-item--five::before {
+  border-color: #00d700 !important;
+  top: -3px !important;
+  right: -4px !important;
+  left: -4px !important;
+  bottom: 1px !important;
 }
 .member-img-container--five::after {
   background-color: #00d700;
@@ -980,8 +978,10 @@
     0 0 40px #00d700, 0 0 50px #00d700, 0 0 60px #00d700, 0 0 70px #00d700,
     0 0 80px #00d700, 0 0 90px #00d700, 0 0 100px #00d700;
 }
+
+.member-img-item--six,
 .member-img-container--six::before {
-  border-color: #2dd1b0;
+  border-color: #2dd1b0 !important;
 }
 .member-img-container--six::after {
   background-color: #2dd1b0;
@@ -995,8 +995,10 @@
     0 0 40px #2dd1b0, 0 0 50px #2dd1b0, 0 0 60px #2dd1b0, 0 0 70px #2dd1b0,
     0 0 80px #2dd1b0, 0 0 90px #2dd1b0, 0 0 100px #2dd1b0;
 }
-.member-img-container--seven::before {
-  border-color: #00a3ff;
+
+.member-img-item--seven::before {
+  border-color: #00a3ff !important;
+  right: -4px !important;
 }
 .member-img-container--seven::after {
   background-color: #00a3ff;
@@ -1010,8 +1012,8 @@
     0 0 40px #00a3ff, 0 0 50px #00a3ff, 0 0 60px #00a3ff, 0 0 70px #00a3ff,
     0 0 80px #00a3ff, 0 0 90px #00a3ff, 0 0 100px #00a3ff;
 }
-.member-img-container--eight::before {
-  border-color: #fe7e3f;
+.member-img-item--eight::before {
+  border-color: #fe7e3f !important;
 }
 .member-img-container--eight::after {
   background-color: #fe7e3f;
@@ -1155,11 +1157,30 @@
 }
 
 .member-img {
-  width: 52%;
-  position: relative;
   border-radius: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.member-img-item {
+  /* background: blueviolet; */
+  width: 50%;
+  height: auto;
+  border-radius: 100%;
+  position: relative;
   margin-left: auto;
   margin-right: auto;
+}
+
+.member-img-item::before {
+  content: "";
+  border-radius: 100%;
+  position: absolute;
+  top: -4px;
+  right: -5px;
+  left: -4px;
+  bottom: 2px;
+  border: 1.5px solid;
 }
 
 .member-info {
