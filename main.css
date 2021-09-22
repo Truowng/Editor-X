@@ -979,8 +979,7 @@
     0 0 80px #00d700, 0 0 90px #00d700, 0 0 100px #00d700;
 }
 
-.member-img-item--six,
-.member-img-container--six::before {
+.member-img-item--six::before {
   border-color: #2dd1b0 !important;
 }
 .member-img-container--six::after {
