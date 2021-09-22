@@ -1,0 +1,96 @@
+/* mobile & tablet  */
+
+@media (max-width: 1023px) {
+  .nav-menu {
+    display: unset;
+    position: absolute;
+    right: 0;
+    width: 39%;
+    background-color: #fff;
+    padding: 40px 30px 0 40px;
+    height: 100%;
+  }
+
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    /* position: unset; */
+    height: auto;
+    align-items: start;
+    padding: 20px 0;
+  }
+
+  .nav-item:last-child {
+    background-color: #fff;
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+
+  .nav-item:hover .nav-item__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    box-shadow: none;
+  }
+
+  .nav-item__list {
+    position: static;
+  }
+
+  .nav-item__list-item {
+  }
+
+  .nav-item__name-link {
+    font-size: 2.3rem;
+  }
+
+  .nav-item__list-item-link {
+    padding: 10px;
+    font-size: 2rem;
+  }
+
+  .nav-item__list-item-link:last-child {
+    padding: 10px 0 0 0;
+  }
+
+  .mobile-tablet-menu {
+    border: none;
+    background-color: var(--primary-color);
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: var(--header-height);
+    height: 100vh;
+  }
+
+  .mb-tb-checkbox:checked ~ .overlay {
+    display: none;
+  }
+}
+
+/* tablet  */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* mobile  */
+
+@media (max-width: 739px) {
+}
+
+/* pc */
+
+@media (min-width: 1024px) {
+  .mobile-tablet-menu {
+    display: none;
+  }
+}
