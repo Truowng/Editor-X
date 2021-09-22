@@ -368,17 +368,24 @@
 /* Sticky */
 
 .content-design__sticky {
-  height: calc(1080px + 1030px + 67px - 257px - 497px - 73px);
-  max-width: 954px;
-  width: 100%;
+  height: 100%;
+  max-height: 1332px;
+  min-height: 1165px;
+  /* max-height: calc(528px * 64 / 100); */
+  /* max-width: 100%; */
+  width: 50.15462000000001%;
   opacity: 0.5;
   position: absolute;
-  /* background-color: violet; */
+  background: violet;
   opacity: 1;
-  top: calc(497px - 67px + var(--header-height));
+  top: 1%;
   z-index: 1;
-  left: 0;
-  margin-left: 11%;
+  right: 0;
+  /* bottom: 257px; */
+  /* margin-left: 11%; */
+  margin-right: 39%;
+  /* margin-bottom: 2000px; */
+  margin-top: 26.09375%;
 }
 
 .sticky-container {
@@ -386,7 +393,7 @@
   width: 100%;
   max-width: 954px;
   max-height: 100%;
-  height: 39.11%;
+  height: 26.8vw;
   background-color: transparent;
   right: 0px;
   top: 250px;
