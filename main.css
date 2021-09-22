@@ -448,7 +448,7 @@
 }
 
 .sticky__main-side-bar {
-  width: 167px;
+  width: 17.51%;
   background-color: #fff;
   height: 100%;
   margin-left: 18px;
@@ -465,7 +465,7 @@
 
 .side-bar__header {
   position: absolute;
-  height: 27px;
+  height: 11.2%;
   background-color: #f4f5f8;
   top: 0;
   right: 0;
@@ -555,7 +555,7 @@
 .content-main__info-row {
   display: flex;
   justify-content: space-between;
-  height: calc(129px / 3.5);
+  height: 28.562%;
   align-items: center;
 }
 .content-main__info-col {
