@@ -1026,8 +1026,10 @@
     0 0 40px #fe7e3f, 0 0 50px #fe7e3f, 0 0 60px #fe7e3f, 0 0 70px #fe7e3f,
     0 0 80px #fe7e3f, 0 0 90px #fe7e3f, 0 0 100px #fe7e3f;
 }
-.member-img-container--me::before {
-  border-color: #fc8fbd;
+.member-img-item--me::before {
+  border-color: #fc8fbd !important;
+  right: -4px !important;
+  bottom: 1px !important;
 }
 .member-img-container--me::after {
   background-color: #fc8fbd;
