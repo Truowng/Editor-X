@@ -369,14 +369,14 @@
 
 .content-design__sticky {
   height: 100%;
-  max-height: 1332px;
+  max-height: 1334px;
   min-height: 1165px;
   /* max-height: calc(528px * 64 / 100); */
   /* max-width: 100%; */
   width: 50.15462000000001%;
   opacity: 0.5;
   position: absolute;
-  background: violet;
+  /* background: violet; */
   opacity: 1;
   top: 1%;
   z-index: 1;
@@ -385,7 +385,7 @@
   /* margin-left: 11%; */
   margin-right: 39%;
   /* margin-bottom: 2000px; */
-  margin-top: 26.09375%;
+  margin-top: 25.75%;
 }
 
 .sticky-container {
