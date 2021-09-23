@@ -94,3 +94,36 @@
     display: none;
   }
 }
+
+/* pc lsow resolution */
+
+@media (min-width: 1900px) and (max-width: 1919px) {
+  .content-design__sticky {
+    margin-top: 26.42%;
+    max-height: 1324px;
+  }
+}
+@media (min-width: 1800px) and (max-width: 1849px) {
+  .content-design__sticky {
+    margin-top: 27.9%;
+    max-height: 1311px;
+  }
+}
+@media (min-width: 1750px) and (max-width: 1799px) {
+  .content-design__sticky {
+    margin-top: 29.4%;
+    max-height: 1297px;
+  }
+}
+@media (min-width: 1700px) and (max-width: 1749px) {
+  .content-design__sticky {
+    margin-top: 31.5%;
+    max-height: 1288px;
+  }
+}
+@media (min-width: 1650px) and (max-width: 1699px) {
+  .content-design__sticky {
+    margin-top: 33.01%;
+    max-height: 1267px;
+  }
+}
