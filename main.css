@@ -73,6 +73,7 @@
   display: inline-block;
   text-decoration: none;
   color: var(--text-color);
+  cursor: pointer;
 }
 
 .nav-item__list {
