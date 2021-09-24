@@ -4,11 +4,14 @@
   .nav-menu {
     display: unset;
     position: absolute;
-    right: 0;
+    right: -100%;
     width: 39%;
     background-color: #fff;
     padding: 40px 30px 0 40px;
     height: 100%;
+    overflow-y: scroll;
+    transition: all ease 0.4s;
+    opacity: 0;
   }
 
   .nav-item {
@@ -89,19 +92,6 @@
     cursor: pointer;
   }
 
-  /* .nav-item:first-child:hover {
-    height: 44%;
-  }
-  .nav-item:nth-child(2):hover {
-    height: 16%;
-  }
-  .nav-item:nth-child(3):hover {
-    height: 26.5%;
-  }
-  .nav-item:nth-child(4):hover {
-    height: 16%;
-  } */
-
   .nav-item:last-child {
     background-color: #fff;
     color: #000;
@@ -130,15 +120,17 @@
     transform-origin: unset;
     box-shadow: unset;
     background-color: transparent;
+    display: flex;
+    flex-direction: column;
   }
 
   .nav-item__name-link {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
 
   .nav-item__list-item-link {
     padding: 10px;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 300;
     color: rgb(34, 34, 34);
@@ -162,15 +154,31 @@
     flex-direction: column;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
-    left: 0;
+    opacity: 0;
     right: 0;
+    left: 0;
     bottom: 0;
     top: var(--header-height);
     height: 100vh;
+    transition: all ease 0.3s;
+    transition-delay: 0.4s;
+    transform: translateX(-100%);
   }
 
   .mb-tb-checkbox:checked ~ .overlay {
-    display: none;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all ease 0.3s;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .mb-tb-checkbox:checked ~ .overlay .nav-menu {
+    right: 0;
+    transition: all ease 0.4s;
+    transition-delay: 0.3s;
+    opacity: 1;
   }
 }
 
